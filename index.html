@@ -3,21 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Портфолио дизайнера и разработчика. Веб-приложения, мобильные интерфейсы, брендинг." />
-    <title>Портфолио | Дизайнер & Разработчик</title>
-    <style>
-      html, body {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #0a0a0f;
-        color: #f0f0f5;
-      }
-    </style>
+    <meta name="description" content="Программист на Python: стек технологий и контакты." />
+    <title>pomestny — программист</title>
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <header class="wrap header">
+      <a href="/" class="logo">pomestny</a>
+      <nav>
+        <a href="#stack">Стек</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+    </header>
+
+    <main class="wrap">
+      <section class="intro">
+        <h1>Программист</h1>
+        <p>
+          Пишу на Python и делаю сайты на HTML и CSS.
+          Ценю простой, понятный и надёжный код.
+        </p>
+        <a class="button" href="https://t.me/pomestny" target="_blank" rel="noopener noreferrer">Написать в Telegram</a>
+      </section>
+
+      <section id="stack">
+        <h2>Стек</h2>
+        <p class="stack">Python, HTML, CSS</p>
+        <p class="stack">Скоро: SQL</p>
+      </section>
+
+      <section id="contact">
+        <h2>Контакты</h2>
+        <p>
+          Есть задача или проект? Пишите в Telegram:
+          <a href="https://t.me/pomestny" target="_blank" rel="noopener noreferrer">@pomestny</a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="wrap footer">
+      <p>© <span id="year">2026</span> pomestny</p>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
